@@ -1,5 +1,9 @@
 # fed-modern-react-redux
 Front End Development - Modern React and Redux JS
+```
+Using version:
+> "react-router-dom": "^4.0.0"
+```
 
 ### Familiar with Git?
 Checkout this repo, install dependencies, then start the gulp process with the following:
@@ -21,14 +25,3 @@ Checkout this repo, install dependencies, then start the gulp process with the f
 - After webpack and babel get througth, we will **get a single file** (application.js or a similar name) with the **hole application**
 
 - npm: node package manager
-
-
-
-
-
-
-
-
-where am I in the curse:
-https://github.com/atafs/fed-modern-react-redux.git
-- 5.
