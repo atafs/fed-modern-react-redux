@@ -13,23 +13,21 @@ class PostsIndex extends Component {
     return _.map(this.props.posts, post => {
       return (
         <li className="list-group-item" key={post.id}>
-          {post.title}
+          {post.title + " => " + post.categories + " => " + post.content}
         </li>
       );
     });
   }
 
   render() {
-    console.log(this.props.posts);
-
     return (
       <div>
         <div className="text-xs-right">
-          <Link className="btn btn-primary" to="/posts/new">
-            Add a Post
+          <Link className="btn btn-primary" to="/posts/grid">
+            Teasers in Grid from Redux
           </Link>
         </div>
-        <h3>Posts</h3>
+        <h3>Teasers from an API</h3>
         <ul className="list-group">
           { this.renderPosts() }
         </ul>
