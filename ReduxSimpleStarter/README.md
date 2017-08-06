@@ -3,7 +3,16 @@ Front End Development - Modern React and Redux JS
 ```
 Using version:
 > "react-router-dom": "^4.0.0"
+
+Using API calls:
+> https://reduxblog.herokuapp.com/
+
+Using a web envirnment for a snippets of JS:
+> https://stephengrider.github.io/JSPlaygrounds/
 ```
+
+
+
 
 ### Familiar with Git?
 Checkout this repo, install dependencies, then start the gulp process with the following:
