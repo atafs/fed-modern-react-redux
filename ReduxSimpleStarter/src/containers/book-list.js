@@ -8,16 +8,16 @@ class BookList extends Component {
     return this.props.books.map((book) => {
       return (
         <li key={book.title}
-            onClick={() => this.props.selectBook(book)}
-            className="list-group-item">
+        onClick={() => this.props.selectBook(book)}
+        className="list-group-item">
           {book.title}
         </li>
-      );
+        );
     });
   }
 
   render() {
-    console.log('CONTAINER', this.props)
+    console.log('CONTAINER BOOK_LIST', this.props)
     return (
       <ul className="list-group col-sm-4">
         { this.renderList() }
@@ -33,7 +33,9 @@ function mapStateToProps(state) {
 }
 
 function mapDispatchToProps(dispatch) {
-  return bindActionCreators({ selectBook: selectBook }, dispatch);
+  return bindActionCreators({
+    selectBook: selectBook
+  }, dispatch);
 }
 
 export default connect(mapStateToProps, mapDispatchToProps)(BookList);
